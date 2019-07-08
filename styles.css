@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
+
+/*# sourceMappingURL=styles.css.map */
