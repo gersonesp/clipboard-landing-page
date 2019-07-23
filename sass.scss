@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
 
 //Primary
 $strongCyan: hsl(171, 66%, 44%);
@@ -8,11 +8,65 @@ $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 
-$FF: 'Bai Jamjuree',
+$FF: "Bai Jamjuree",
 sans-serif;
 
 body {
+    background-image: url("./images/bg-header-mobile.png");
+    background-repeat: no-repeat;
     font-family: $FF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 25% 8% 8% 8%;
+
+    p {
+        color: $grayishBlue;
+    }
+
+    h2 {
+        color: $darkGrayishBlue
+    }
+}
+
+.iosButton {
+    background-color: $strongCyan;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 lightgray;
+    margin: 10% 0 5% 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.macButton {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightBlue;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 lightgray;
+    margin: 5% 0 50% 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .attribution {

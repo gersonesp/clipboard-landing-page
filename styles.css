@@ -1,6 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
 body {
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
   font-family: "Bai Jamjuree", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 25% 8% 8% 8%;
+}
+body p {
+  color: #9fabb2;
+}
+body h2 {
+  color: #4c545d;
+}
+
+.iosButton {
+  background-color: #26baa4;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 0 3px 0 lightgray;
+  margin: 10% 0 5% 0;
+}
+.iosButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.macButton {
+  display: flex;
+  flex-direction: column;
+  background-color: #6173ff;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 0 3px 0 lightgray;
+  margin: 5% 0 50% 0;
+}
+.macButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .attribution {
