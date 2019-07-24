@@ -8,72 +8,82 @@ $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 
-$FF: "Bai Jamjuree",
-sans-serif;
+$FF: "Bai Jamjuree", sans-serif;
 
 body {
-    background-image: url("./images/bg-header-mobile.png");
-    background-repeat: no-repeat;
-    font-family: $FF;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 25% 8% 8% 8%;
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  font-family: $FF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 25% 8% 8% 8%;
 
-    p {
-        color: $grayishBlue;
-    }
+  p {
+    color: $grayishBlue;
+    margin: 0;
+  }
 
-    h2 {
-        color: $darkGrayishBlue
-    }
+  h2 {
+    color: $darkGrayishBlue;
+    margin: 20% 0 5% 0;
+  }
+
+  img {
+    margin: 15% 0 15% 0;
+  }
+
+  span {
+    display: block;
+    height: 100px;
+  }
 }
 
 .iosButton {
-    background-color: $strongCyan;
-    height: 50px;
-    border-radius: 30px;
-    box-shadow: 0 3px 0 lightgray;
-    margin: 10% 0 5% 0;
+  background-color: $strongCyan;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 0 3px 0 lightgray;
+  margin: 10% 0 5% 0;
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        color: white;
-        text-decoration: none;
-    }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .macButton {
-    display: flex;
-    flex-direction: column;
-    background-color: $lightBlue;
-    height: 50px;
-    border-radius: 30px;
-    box-shadow: 0 3px 0 lightgray;
-    margin: 5% 0 50% 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $lightBlue;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 0 3px 0 lightgray;
+  margin: 5% 0 5% 0;
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        color: white;
-        text-decoration: none;
-    }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
