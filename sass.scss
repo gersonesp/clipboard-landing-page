@@ -8,11 +8,17 @@ $lightBlue: hsl(233, 100%, 69%);
 $darkGrayishBlue: hsl(210, 10%, 33%);
 $grayishBlue: hsl(201, 11%, 66%);
 
-$FF: "Bai Jamjuree", sans-serif;
+$FF: "Bai Jamjuree",
+sans-serif;
 
 body {
   background-image: url("./images/bg-header-mobile.png");
   background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
   font-family: $FF;
   display: flex;
   flex-direction: column;
@@ -77,6 +83,65 @@ body {
     color: white;
     text-decoration: none;
   }
+}
+
+.infoBlock {
+  margin-top: 50px;
+
+  h2 {
+    margin: 0 0 15px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.imageList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 100px 0;
+
+  img {
+    margin: 30px 0 30px 0;
+    width: 125px;
+  }
+}
+
+.ending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 50px;
+    margin: 50px 0 30px 0;
+  }
+
+  a {
+    display: block;
+    font-family: $FF;
+    text-decoration: none;
+    color: $darkGrayishBlue;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+
+  img {
+    margin: 0 20px 0 20px;
+  }
+}
+
+footer {
+  margin: 100px 0 0 0;
+  width: 100%;
+  background-color: whitesmoke;
 }
 
 .attribution {
