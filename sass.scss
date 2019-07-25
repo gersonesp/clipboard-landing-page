@@ -11,11 +11,25 @@ $grayishBlue: hsl(201, 11%, 66%);
 $FF: "Bai Jamjuree",
 sans-serif;
 
+$desktop: 700px;
+
 body {
   background-image: url("./images/bg-header-mobile.png");
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   margin: 0;
+
+  @media screen and (min-width: $desktop) {
+    background-image: url("./images/bg-header-desktop.png");
+    background-size: 100%;
+    font-size: 20px;
+  }
+}
+
+.body {
+  @media screen and (min-width: $desktop) {
+    margin: 0 20% 0 20%;
+  }
 }
 
 .main {
@@ -36,64 +50,153 @@ body {
   }
 
   img {
-    margin: 15% 0 15% 0;
+    margin: 15% 0 5% 0;
   }
 
   span {
     display: block;
     height: 100px;
   }
-}
 
-.iosButton {
-  background-color: $strongCyan;
-  height: 50px;
-  border-radius: 30px;
-  box-shadow: 0 3px 0 lightgray;
-  margin: 10% 0 5% 0;
+  @media screen and (min-width: $desktop) {
+    margin: 0;
 
-  a {
+    h2 {
+      margin-top: 0;
+    }
+
+    #mainBoxOne {
+      margin-top: 0;
+      align-self: center;
+      width: 70%;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+
+    }
+
+    .buttonContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5%;
+    }
+
+    .computerContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 10%;
+      font-size: 70%;
+
+
+      .computerImage img {
+        width: 125%;
+        margin: 0;
+        transform: translate(-50%, 0);
+
+      }
+
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        transform: translate(-30%, 0);
+
+
+        .text {
+          margin-bottom: 10%;
+          text-align: left;
+
+        }
+      }
+    }
+
+    .devicesImage {
+      width: 100%;
+
+
+      img {
+        margin: 10% 0 0 0;
+        width: 100%;
+      }
+    }
+
+    .infoImages {
+      display: flex;
+      justify-content: space-around;
+
+
+      .infoBlock {
+        width: 30%;
+      }
+    }
+  }
+
+  .iosButton {
+    background-color: $strongCyan;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 lightgray;
+    margin: 10% 0 5% 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      width: 225px;
+      font-size: 90%;
+    }
+  }
+
+  .macButton {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-decoration: none;
-  }
-}
+    flex-direction: column;
+    background-color: $lightBlue;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0 3px 0 lightgray;
+    margin: 5% 0 5% 0;
 
-.macButton {
-  display: flex;
-  flex-direction: column;
-  background-color: $lightBlue;
-  height: 50px;
-  border-radius: 30px;
-  box-shadow: 0 3px 0 lightgray;
-  margin: 5% 0 5% 0;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      text-decoration: none;
+    }
 
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.infoBlock {
-  margin-top: 50px;
-
-  h2 {
-    margin: 0 0 15px 0;
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      width: 225px;
+      font-size: 90%;
+    }
   }
 
-  p {
-    margin: 0;
+  .infoBlock {
+    margin-top: 50px;
+
+    h2 {
+      margin: 0 0 15px 0;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -107,17 +210,42 @@ body {
     margin: 30px 0 30px 0;
     width: 125px;
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    display: block;
+    width: 50px;
+    margin: 50px 0 30px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+      margin: 0;
+
+    }
+  }
 }
 
 .ending {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  img {
-    width: 50px;
-    margin: 50px 0 30px 0;
-  }
+  text-align: center;
 
   a {
     display: block;
@@ -125,6 +253,25 @@ body {
     text-decoration: none;
     color: $darkGrayishBlue;
     margin: 10px 0 10px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-grow: 2;
+
+    .endingLinks {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100px;
+      width: 100%;
+    }
+
+    a:hover {
+      color: $strongCyan;
+    }
   }
 }
 
@@ -134,7 +281,12 @@ body {
   margin: 30px 0 30px 0;
 
   img {
+    display: block;
     margin: 0 20px 0 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-grow: 1;
   }
 }
 
@@ -144,9 +296,19 @@ footer {
   background-color: whitesmoke;
 }
 
+.footer {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    height: 200px;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 2%;
 }
 
 .attribution a {
